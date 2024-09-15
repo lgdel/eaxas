@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <fstream>
+#include <cstring>
 
 using namespace std;
 
@@ -9,7 +10,16 @@ using namespace std;
 #define BSWAP32(x) _byteswap_ulong(x)
 #define BSWAP16(x) _byteswap_ushort(x)
 
-// #else ...
+#else
+inline uint32_t bswap32(uint32_t x) {
+    return (x >> 24) | ((x & 0xFF0000) >> 8) | ((x & 0xFF00) << 8) | ((x & 0xFF) << 24);
+}
+
+inline uint16_t bswap16(uint16_t x) {
+    return (x >> 8) | ((x & 0xFF) << 8);
+}
+#define BSWAP32(x) bswap32(x)
+#define BSWAP16(x) bswap16(x)
 
 #endif
 

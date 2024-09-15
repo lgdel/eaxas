@@ -1,7 +1,8 @@
 #include "AsfWriter.h"
-#include <stdint.h>
 #include <iostream>
-#include <fstream>
+#include <memory>
+#include <cstring>
+#include <cstdlib>
 #include "utility.h"
 
 using namespace std;

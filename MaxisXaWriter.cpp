@@ -1,7 +1,7 @@
 #include "MaxisXaWriter.h"
-#include <stdint.h>
 #include <iostream>
-#include <fstream>
+#include <cstring>
+#include <memory>
 #include "utility.h"
 
 using namespace std;

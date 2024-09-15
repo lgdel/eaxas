@@ -1,7 +1,7 @@
-#include <stdint.h>
-#include <iostream>
-#include <fstream>
 #include "WavParser.h"
+#include <iostream>
+#include <cstring>
+#include <memory>
 #include "utility.h"
 
 using namespace std;

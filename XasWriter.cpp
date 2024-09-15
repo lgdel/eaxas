@@ -1,8 +1,8 @@
 #include "XasWriter.h"
+#include <cstring>
+#include <memory>
 #include "utility.h"
-#include <stdint.h>
 #include <iostream>
-#include <fstream>
 
 using namespace std;
 

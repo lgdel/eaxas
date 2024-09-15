@@ -1,7 +1,8 @@
-#include <stdint.h>
-#include <iostream>
-#include "utility.h"
 #include "EaXaEncoder.h"
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include "utility.h"
 
 using namespace std;
 
